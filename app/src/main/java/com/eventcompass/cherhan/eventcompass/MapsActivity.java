@@ -1,8 +1,10 @@
 package com.eventcompass.cherhan.eventcompass;
 
+import android.location.Location;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -11,9 +13,13 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity {
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
+    private boolean booInitDone = false;
+    private static final Integer ZOOM_CONSTANT = 11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+//        Hello World
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         setUpMapIfNeeded();
@@ -60,6 +66,29 @@ public class MapsActivity extends FragmentActivity {
      * This should only be called once and when we are sure that {@link #mMap} is not null.
      */
     private void setUpMap() {
-        mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+
+        mMap.setMyLocationEnabled(true);
+
+        mMap.setOnMyLocationChangeListener(new GoogleMap.OnMyLocationChangeListener() {
+            @Override
+            public void onMyLocationChange(Location location) {
+                if (!booInitDone) {
+                    LatLng myLocation = new LatLng(0,0);
+                    if (location != null) {
+                        myLocation = new LatLng(location.getLatitude(),
+                                location.getLongitude());
+                    }
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(myLocation,
+                            ZOOM_CONSTANT));
+                    booInitDone = true;
+                }
+            }
+        });
+
+        mMap.addMarker(new MarkerOptions().position(new LatLng(3.158273, 101.708278)).title("Zouk Boost Boost"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(3.153816, 101.714669)).title("Sky Bar - Ladies' Night"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(3.146887, 101.615616)).title("XYZ Corporate Annual Dinner @ The Roof"));
+
     }
+
 }
