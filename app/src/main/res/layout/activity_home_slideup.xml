@@ -1,0 +1,278 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoActivity" >
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:panelHeight="68dp"
+        sothree:shadowHeight="4dp"
+        sothree:paralaxOffset="100dp"
+        sothree:dragView="@+id/dragView">
+
+        <!-- MAIN CONTENT -->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/fav_banner_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/loc_mk_selector"
+                        android:id="@+id/locationMK" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/ic_fav"
+                        android:layout_marginTop="54dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/location_mk"
+                        android:fontFamily="sans-serif-thin"
+                        android:textSize="26sp"
+                        android:textColor="@android:color/white"
+                        android:layout_below="@+id/imageView3"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/textViewMK"/>
+
+                    <TextView
+                        android:id="@+id/counterMK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:text="20 Events"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"
+                        android:layout_below="@+id/textViewMK"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/location_banner_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/loc_kl_selector"
+                        android:id="@+id/locationKL" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="@string/location_kl"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/counterKL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:text="20 Events"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/location_banner_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/loc_bangsar_selector"
+                        android:id="@+id/locationBangsar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="@string/location_bangsar"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/counterBangsar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:text="20 Events"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout3" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/location_banner_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/loc_ampang_selector"
+                        android:id="@+id/locationAmpang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="@string/location_ampang"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/counterAmpang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:text="20 Events"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout4" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/location_banner_height"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/loc_subang_selector"
+                        android:id="@+id/locationSubang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="@string/location_subang"
+                        android:textSize="26sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:id="@+id/counterSubang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:text="20 Events"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- SLIDING LAYOUT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drawer_height"
+            android:background="#eeeeee"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="false"
+            android:id="@+id/dragView">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/drawer_height"
+                layout="@layout/drawer_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"/>
+
+                <Button
+                    android:id="@+id/follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+</RelativeLayout>

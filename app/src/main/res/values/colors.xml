@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="shade_red_65">#a6dc5151</color>
+    <color name="shade_yellow_65">#a6e1a04d</color>
+    <color name="shade_orange_65">#a6e1814d</color>
+    <color name="shade_lime_65">#a690d348</color>
+    <color name="shade_green_65">#a64fd348</color>
+    <color name="shade_turquoise_65">#a64de1c0</color>
+    <color name="shade_aqua_65">#a63aaeea</color>
+    <color name="shade_marine_65">#a65877d1</color>
+    <color name="shade_purple_65">#a6b43cd6</color>
+    <color name="shade_pink_65">#a6e965bc</color>
+    <color name="shade_magenta_65">#a6ea546c</color>
+    <color name="shade_dark_65">#a6565656</color>
+    <color name="shade_light_65">#a6c4c4c4</color>
+    <color name="shade_light">#ffeeeeee</color>
+    <color name="shade_text_dark">#ff878787</color>
+    <color name="shade_text_dark_strong">#ff424242</color>
+    <color name="shade_red">#ffdc5151</color>
+    <color name="shade_main">#ffe58629</color>
+    <color name="shade_main_dark">#ffc77320</color>
+    <color name="shade_main_trans">#26e58629</color>
+    <color name="shade_gray_01">#26000000</color>
+    <color name="shade_gray_02">#60000000</color>
+    <color name="shade_gray_03">#99000000</color>
+    <color name="shade_gray_04">#cc000000</color>
+</resources>
