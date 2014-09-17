@@ -3,6 +3,7 @@
 
     <string name="app_name">EventCompass</string>
     <string name="title_activity_maps">Map</string>
+<<<<<<< HEAD
     <string name="title_activity_home">HomeActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -24,5 +25,10 @@
     <string name="search_title_visibility">Visibility</string>
     <string name="search_title_category">Categories</string>
     <string name="search_title_location">Location</string>
+=======
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+>>>>>>> FETCH_HEAD
 
 </resources>
