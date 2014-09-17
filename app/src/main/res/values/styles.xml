@@ -5,4 +5,28 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="EC" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/EC.ActionBar</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <style name="EC.NoActionBar" parent="android:Theme.Holo.NoActionBar.TranslucentDecor">
+        <item name="android:windowBackground">@color/shade_light</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="EC.ActionBar" parent="android:Widget.ActionBar">
+        <item name="android:background">@color/shade_light</item>
+        <item name="android:height">@dimen/actionbar_height</item>
+        <item name="android:titleTextStyle">@style/EC.ActionBar.TitleText</item>
+    </style>
+
+    <style name="EC.ActionBar.TitleText" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/shade_text_dark</item>
+    </style>
+
 </resources>

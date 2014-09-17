@@ -3,8 +3,32 @@
 
     <string name="app_name">EventCompass</string>
     <string name="title_activity_maps">Map</string>
+<<<<<<< HEAD
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="current_location">Current Location</string>
+    <string name="location_mk">Mont Kiara</string>
+    <string name="location_kl">Kuala Lumpur</string>
+    <string name="location_ampang">Ampang</string>
+    <string name="location_bangsar">Bangsar</string>
+    <string name="location_subang">Subang</string>
+    <string name="drawer_create">Create new Event</string>
+    <string name="drawer_friends">Find Friends</string>
+    <string name="drawer_tickets">My Tickets</string>
+    <string name="drawer_browse">Browse Events</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="search_visibility_private">Private Only</string>
+    <string name="search_visibility_public">Public Only</string>
+    <string name="visible_private">Private</string>
+    <string name="visible_public">Public</string>
+    <string name="search_title_visibility">Visibility</string>
+    <string name="search_title_category">Categories</string>
+    <string name="search_title_location">Location</string>
+=======
     <string name="title_activity_main">MainActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+>>>>>>> FETCH_HEAD
 
 </resources>
