@@ -1,17 +1,52 @@
 package com.eventcompass.cherhan.eventcompass;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class HomeActivity extends Activity {
+
+    TextView txtLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_slideup);
+
+         //Should show the actual location instead of a text
+         txtLocation = (TextView) findViewById(R.id.tvLocation);
+         txtLocation.setText("KL Convention Center");
+
+        //Launches Search
+        final ImageButton btnSearch = (ImageButton)findViewById(R.id.ivSearch);
+
+        btnSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent SearchIntent = new Intent(HomeActivity.this, SearchActivity.class);
+                startActivity(SearchIntent);
+            }
+        });
+
+        //Launches Mont Kiara Location
+        final ImageView ivMK = (ImageView)findViewById(R.id.locationMK);
+
+        ivMK.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mkIntent = new Intent(HomeActivity.this, LocationMKActivity.class);
+                startActivity(mkIntent);
+            }
+        });
     }
+
+
 
 
     @Override

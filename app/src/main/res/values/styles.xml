@@ -20,7 +20,7 @@
 
     <style name="EC.ActionBar" parent="android:Widget.ActionBar">
         <item name="android:background">@color/shade_light</item>
-        <item name="android:height">@dimen/actionbar_height</item>
+        <item name="android:height">@dimen/revised_actionbar_height</item>
         <item name="android:titleTextStyle">@style/EC.ActionBar.TitleText</item>
     </style>
 

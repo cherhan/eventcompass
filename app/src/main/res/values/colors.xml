@@ -24,4 +24,5 @@
     <color name="shade_gray_02">#60000000</color>
     <color name="shade_gray_03">#99000000</color>
     <color name="shade_gray_04">#cc000000</color>
+    <color name="shade_gray_05">#80000000</color>
 </resources>
