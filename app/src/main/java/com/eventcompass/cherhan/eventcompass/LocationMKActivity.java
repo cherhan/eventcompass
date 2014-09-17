@@ -1,9 +1,11 @@
 package com.eventcompass.cherhan.eventcompass;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
@@ -18,6 +20,16 @@ public class LocationMKActivity extends Activity {
         setContentView(R.layout.location_mk_slideup);
 
         //gps button should show the map, replaces the image with the map
+
+        final ImageButton btnBack = (ImageButton)findViewById(R.id.btnBack);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent backIntent = new Intent(LocationMKActivity.this, HomeActivity.class);
+                startActivity(backIntent);
+            }
+        });
 
     }
 

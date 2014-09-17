@@ -53,16 +53,14 @@
                         android:text="@string/location_mk"
                         android:textSize="23sp"
                         android:fontFamily="sans-serif-thin"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:layout_marginTop="10dp"
                         android:id="@+id/textView"
+                        android:layout_toEndOf="@+id/btnBack"
                         android:layout_alignParentTop="true"
-                        android:layout_alignParentStart="true" />
+                        android:layout_marginTop="9dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
                         android:textColor="@android:color/white"
                         android:text="20 Events"
                         android:textAllCaps="true"
@@ -70,8 +68,9 @@
                         android:fontFamily="sans-serif-condensed"
                         android:textSize="13sp"
                         android:id="@+id/textView2"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignStart="@+id/textView" />
+                        android:layout_alignStart="@+id/textView"
+                        android:layout_below="@+id/textView"
+                        android:layout_toRightOf="@+id/btnBack" />
 
                     <ImageButton
                         android:layout_width="@dimen/location_overlay_height"
@@ -81,6 +80,17 @@
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
                         android:id="@+id/btnShowMap"/>
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/btnBack"
+                        android:background="@drawable/btn_touch_generic"
+                        android:src="@drawable/ic_back"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true" />
                 </RelativeLayout>
 
             </RelativeLayout>

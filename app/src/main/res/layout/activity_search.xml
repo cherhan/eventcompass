@@ -85,8 +85,8 @@
             android:layout_height="@dimen/search_thumb_size"
             android:layout_marginRight="6dp"
             android:layout_marginBottom="6dp"
-            android:id="@+id/catMusic"
-            android:background="@drawable/music_selector"
+            android:id="@+id/catSports"
+            android:background="@drawable/sports_selector"
             android:layout_below="@+id/textView2"
             android:layout_alignParentStart="true" />
 
@@ -98,8 +98,8 @@
             android:layout_marginBottom="6dp"
             android:id="@+id/catHangout"
             android:src="@drawable/hangout_selector"
-            android:layout_toEndOf="@+id/catMusic"
-            android:layout_alignTop="@+id/catMusic" />
+            android:layout_toEndOf="@+id/catSports"
+            android:layout_alignTop="@+id/catSports" />
 
         <ImageView
             android:layout_width="@dimen/search_thumb_size"
@@ -107,57 +107,10 @@
             android:layout_marginRight="6dp"
             android:layout_marginLeft="6dp"
             android:layout_marginBottom="6dp"
-            android:id="@+id/catChill"
-            android:src="@drawable/chill_selector"
+            android:id="@+id/catGathering"
+            android:src="@drawable/event_selector"
             android:layout_below="@+id/textView2"
             android:layout_toEndOf="@+id/catHangout" />
-
-        <ImageView
-            android:layout_width="@dimen/search_thumb_size"
-            android:layout_height="@dimen/search_thumb_size"
-            android:layout_marginLeft="6dp"
-            android:layout_marginBottom="6dp"
-            android:id="@+id/catGaming"
-            android:src="@drawable/gaming_selector"
-            android:layout_alignTop="@+id/catChill"
-            android:layout_toEndOf="@+id/catChill" />
-
-        <ImageView
-            android:layout_width="@dimen/search_thumb_size"
-            android:layout_height="@dimen/search_thumb_size"
-            android:layout_marginRight="6dp"
-            android:layout_marginTop="6dp"
-            android:id="@+id/catEvent"
-            android:src="@drawable/event_selector"
-            android:layout_below="@+id/catMusic"
-            android:layout_alignParentStart="true" />
-
-        <ImageView
-            android:layout_width="@dimen/search_thumb_size"
-            android:layout_height="@dimen/search_thumb_size"
-            android:layout_marginRight="6dp"
-            android:id="@+id/catParty"
-            android:src="@drawable/party_selector"
-            android:layout_alignTop="@+id/catEvent"
-            android:layout_alignStart="@+id/catHangout" />
-
-        <ImageView
-            android:layout_width="@dimen/search_thumb_size"
-            android:layout_height="@dimen/search_thumb_size"
-            android:layout_marginRight="6dp"
-            android:id="@+id/catSports"
-            android:src="@drawable/sports_selector"
-            android:layout_alignTop="@+id/catParty"
-            android:layout_alignStart="@+id/catChill" />
-
-        <ImageView
-            android:layout_width="@dimen/search_thumb_size"
-            android:layout_height="@dimen/search_thumb_size"
-            android:layout_marginLeft="6dp"
-            android:id="@+id/catTravel"
-            android:src="@drawable/travel_selector"
-            android:layout_alignTop="@+id/catSports"
-            android:layout_toEndOf="@+id/catSports" />
 
 
     </RelativeLayout>
