@@ -21,6 +21,13 @@
             android:layout_marginBottom="15dp">
 
             <ImageView
+                android:id="@+id/btnCreateEvent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_touch_generic"
+                android:layout_alignBottom="@+id/imageView" />
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
@@ -44,6 +51,13 @@
             android:layout_height="fill_parent"
             android:layout_marginBottom="15dp"
             android:id="@+id/relativeLayout">
+
+            <ImageView
+                android:id="@+id/btnBrowseEvents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_touch_generic"
+                android:layout_alignBottom="@+id/imageView2" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -71,6 +85,13 @@
             android:id="@+id/relativeLayout2" >
 
             <ImageView
+                android:id="@+id/btnFindFriends"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_touch_generic"
+                android:layout_alignBottom="@+id/imageView3" />
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
@@ -96,6 +117,13 @@
             android:id="@+id/relativeLayout3" >
 
             <ImageView
+                android:id="@+id/btnMyTickets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_touch_generic"
+                android:layout_alignBottom="@+id/imageView4" />
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
@@ -114,6 +142,17 @@
                 android:layout_toEndOf="@+id/imageView4" />
         </RelativeLayout>
     </LinearLayout>
+
+    <!-- <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawerList" />
+    </LinearLayout> -->
 
     <RelativeLayout
         android:layout_width="match_parent"

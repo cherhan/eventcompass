@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 public class LocationMKActivity extends Activity {
@@ -28,6 +29,39 @@ public class LocationMKActivity extends Activity {
             public void onClick(View view) {
                 Intent backIntent = new Intent(LocationMKActivity.this, HomeActivity.class);
                 startActivity(backIntent);
+            }
+        });
+
+        //Launches Search
+        final ImageButton btnSearch = (ImageButton)findViewById(R.id.ivSearch);
+
+        btnSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent SearchIntent = new Intent(LocationMKActivity.this, SearchActivity.class);
+                startActivity(SearchIntent);
+            }
+        });
+
+        //Drawer Content Events
+
+        final ImageView btnCreateEvent = (ImageView)findViewById(R.id.btnCreateEvent);
+
+        btnCreateEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent createEventIntent = new Intent(LocationMKActivity.this, CreateEventActivity.class);
+                startActivity(createEventIntent);
+            }
+        });
+
+        final ImageView btnBrowse = (ImageView)findViewById(R.id.btnBrowseEvents);
+
+        btnBrowse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browseIntent = new Intent(LocationMKActivity.this, HomeActivity.class);
+                startActivity(browseIntent);
             }
         });
 

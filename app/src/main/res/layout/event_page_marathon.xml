@@ -18,7 +18,7 @@
         <!-- MAIN CONTENT -->
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/scrollView"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true" >
@@ -30,16 +30,17 @@
                 android:layout_alignParentStart="true"
                 android:id="@+id/relativeLayout">
 
-               <ImageView
+                <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/imageView"
-                    android:src="@drawable/location_mk"
+                    android:src="@drawable/marathon"
                     android:scaleType="centerCrop"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentStart="true" />
 
                 <RelativeLayout
+                    android:id="@+id/overlay"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/location_overlay_height"
                     android:background="@color/shade_gray_05"
@@ -50,7 +51,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/white"
-                        android:text="@string/location_mk"
+                        android:text="@string/event_marathon"
                         android:textSize="23sp"
                         android:fontFamily="sans-serif-thin"
                         android:id="@+id/textView"
@@ -62,7 +63,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@android:color/white"
-                        android:text="20 Events"
+                        android:text="0 Friends are here"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:fontFamily="sans-serif-condensed"
@@ -95,20 +96,104 @@
 
             </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_height="@dimen/actionbar_height"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="232dp">
+                android:background="@android:color/white"
+                android:layout_marginTop="232dp"
+                android:id="@+id/relativeLayout2">
 
-                <ListView
+                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/listView3"
-                    android:layout_weight="1" />
-            </LinearLayout>
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="Join Event"
+                    android:textSize="15sp"
+                    android:background="@drawable/btn_public"
+                    android:id="@+id/button"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/event_public"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/event_public_label"
+                    android:textColor="@color/shade_secondary"
+                    android:textStyle="bold"
+                    android:id="@+id/textView3"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:layout_alignBaseline="@+id/button"
+                    android:layout_alignBottom="@+id/button" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_alignParentStart="true">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/relativeLayout3"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="@dimen/activity_horizontal_margin"
+                            android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="@string/event_about"
+                                android:textAllCaps="true"
+                                android:textColor="@color/shade_text_medium"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textStyle="bold"
+                                android:id="@+id/textView4"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:text="The Annual 2014 Kuala Lumpur Marathon starts off at KLCC park. Join blabla"
+                                android:textColor="@color/shade_text_dark"
+                                android:id="@+id/tfAbout"
+                                android:layout_below="@+id/textView4" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </RelativeLayout>
 
         </RelativeLayout>
 

@@ -21,7 +21,7 @@ public class HomeActivity extends Activity {
 
          //Should show the actual location instead of a text
          txtLocation = (TextView) findViewById(R.id.tvLocation);
-         txtLocation.setText("KL Convention Center");
+         //txtLocation.setText("KL Convention Center");
 
         //Launches Search
         final ImageButton btnSearch = (ImageButton)findViewById(R.id.ivSearch);
@@ -44,6 +44,19 @@ public class HomeActivity extends Activity {
                 startActivity(mkIntent);
             }
         });
+
+        //Drawer Content Events
+
+        final ImageView btnCreateEvent = (ImageView)findViewById(R.id.btnCreateEvent);
+
+        btnCreateEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent createEventIntent = new Intent(HomeActivity.this, CreateEventActivity.class);
+                startActivity(createEventIntent);
+            }
+        });
+
     }
 
 

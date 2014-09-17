@@ -29,4 +29,23 @@
     <string name="title_activity_location_mk">LocationMKActivity</string>
     <string name="title_activity_sign_in">SignIn</string>
 
+    <string-array name="drawer_items">
+        <item>Create new Event</item>
+        <item>Browse Events</item>
+        <item>Find Friends</item>
+        <item>My Events</item>
+    </string-array>
+
+    <string name="title_activity_create_event">Create new Event</string>
+    <string name="event_about">About The Event</string>
+    <string name="event_time">When is it</string>
+    <string name="event_location">Where is it</string>
+    <string name="event_banner">Upload a Banner</string>
+    <string name="event_accept">Create</string>
+    <string name="event_cancel">Discard</string>
+    <string name="event_visibility">Visibility</string>
+    <string name="title_activity_event_page_marathon">EventPageMarathon</string>
+    <string name="event_marathon">KL Marathon 2014</string>
+    <string name="event_public_label">This event is public</string>
+
 </resources>

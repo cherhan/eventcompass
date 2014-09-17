@@ -15,6 +15,7 @@
     <color name="shade_light_65">#a6c4c4c4</color>
     <color name="shade_light">#ffeeeeee</color>
     <color name="shade_text_dark">#ff878787</color>
+    <color name="shade_text_medium">#ff585858</color>
     <color name="shade_text_dark_strong">#ff424242</color>
     <color name="shade_red">#ffdc5151</color>
     <color name="shade_main">#ffe58629</color>
@@ -26,4 +27,5 @@
     <color name="shade_gray_04">#cc000000</color>
     <color name="shade_gray_05">#80000000</color>
     <color name="shade_secondary">#ff2dc184</color>
+    <color name="shade_secondary_dark">#ff27a672</color>
 </resources>
