@@ -33,7 +33,8 @@
         <activity
             android:name=".SearchActivity"
             android:label="@string/title_activity_search"
-            android:windowSoftInputMode="stateHidden">
+            android:parentActivityName=".HomeActivity"
+            android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
             android:name=".LocationMKActivity"
@@ -43,17 +44,27 @@
         <activity
             android:name=".SignIn"
             android:label="@string/title_activity_sign_in"
-            android:theme="@style/EC.NoActionBar" >
+            android:theme="@style/EC.Fullscreen" >
         </activity>
         <activity
             android:name=".CreateEventActivity"
             android:label="@string/title_activity_create_event"
-            android:windowSoftInputMode="stateHidden">
+            android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
             android:name=".EventPageMarathon"
             android:label="@string/title_activity_event_page_marathon"
-            android:theme="@style/EC.NoActionBar">
+            android:theme="@style/EC.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".MyTicketsActivity"
+            android:label="@string/title_activity_my_tickets" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/EC.Settings"
+            android:icon="@drawable/ic_phantom">
         </activity>
     </application>
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">EventCompass</string>
+    <string name="app_name">Pocket Event</string>
+    <string name="tagline">Plan a better event</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="hello_world">Hello world!</string>
@@ -47,5 +48,6 @@
     <string name="title_activity_event_page_marathon">EventPageMarathon</string>
     <string name="event_marathon">KL Marathon 2014</string>
     <string name="event_public_label">This event is public</string>
+    <string name="title_activity_my_tickets">My Events</string>
 
 </resources>

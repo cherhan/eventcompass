@@ -65,6 +65,16 @@ public class LocationMKActivity extends Activity {
             }
         });
 
+        final ImageView btnMyEvents = (ImageView)findViewById(R.id.btnMyTickets);
+
+        btnMyEvents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent EventsIntents = new Intent(LocationMKActivity.this, MyTicketsActivity.class);
+                startActivity(EventsIntents);
+            }
+        });
+
     }
 
 

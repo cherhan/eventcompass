@@ -159,5 +159,13 @@
         android:layout_height="90dp"
         android:background="@color/shade_lime_65">
 
-        </RelativeLayout>
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnSettings"
+            android:background="@drawable/btn_touch_generic"
+            android:src="@drawable/ic_settings"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
 </LinearLayout>

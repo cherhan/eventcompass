@@ -57,6 +57,26 @@ public class HomeActivity extends Activity {
             }
         });
 
+        final ImageView btnMyEvents = (ImageView)findViewById(R.id.btnMyTickets);
+
+        btnMyEvents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent EventsIntents = new Intent(HomeActivity.this, MyTicketsActivity.class);
+                startActivity(EventsIntents);
+            }
+        });
+
+        //Launching settings
+        final ImageButton btnSettings = (ImageButton)findViewById(R.id.btnSettings);
+        btnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent settingIntent = new Intent(HomeActivity.this, SettingsActivity.class);
+                startActivity(settingIntent);
+            }
+        });
+
     }
 
 
