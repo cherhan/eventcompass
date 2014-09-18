@@ -39,8 +39,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/banner"
-                        android:scaleType="centerCrop"
+                        android:background="@color/shade_lime_65"
                         android:id="@+id/facebookBanner"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentStart="true" />
@@ -48,7 +47,7 @@
                     <ImageView
                         android:layout_width="56dp"
                         android:layout_height="56dp"
-                        android:background="@drawable/profile"
+                        android:background="@color/shade_gray_01"
                         android:layout_margin="16dp"
                         android:id="@+id/facebookProfilePic"
                         android:layout_alignParentBottom="true"
@@ -98,22 +97,22 @@
                         android:layout_alignParentStart="true" >
 
                         <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="50dp"
+                            android:layout_width="106dp"
+                            android:layout_height="56dp"
                             android:layout_marginRight="@dimen/activity_horizontal_margin"
                             android:src="@drawable/tabs_info"
                             android:id="@+id/tabInfo" />
 
                         <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="50dp"
+                            android:layout_width="106dp"
+                            android:layout_height="56dp"
                             android:src="@drawable/tabs_mutual_friends"
                             android:id="@+id/tabMutuals"
                             android:layout_toEndOf="@+id/tabInfo" />
 
                         <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="50dp"
+                            android:layout_width="106dp"
+                            android:layout_height="56dp"
                             android:layout_marginLeft="@dimen/activity_horizontal_margin"
                             android:src="@drawable/tabs_pictures"
                             android:id="@+id/tabPhotos"
@@ -168,7 +167,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="15dp"
-                                    android:text="Austrian UI / UX Designer, based in Kuala Lumpur"
+                                    android:text="Facebook Info, any description"
                                     android:textColor="@color/shade_text_dark"
                                     android:id="@+id/textView2"
                                     android:layout_below="@+id/textView"
@@ -240,7 +239,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="15dp"
-                                    android:text="Vorarlberg, Austria"
+                                    android:text="Vienna, Austria"
                                     android:textColor="@color/shade_text_dark"
                                     android:id="@+id/textView8"
                                     android:layout_below="@+id/textView7"
@@ -276,7 +275,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="15dp"
-                                    android:text="Technology, Food, Development, UI Design, Print Design"
+                                    android:text="Swimming, idk, lorem ipsum Swimming, idk, lorem ipsumSwimming, idk, lorem ipsumSwimming, idk, lorem ipsumSwimming, idk, lorem ipsumSwimming, idk, lorem ipsum"
                                     android:textColor="@color/shade_text_dark"
                                     android:id="@+id/textView10"
                                     android:layout_below="@+id/textView9"

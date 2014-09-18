@@ -11,6 +11,6 @@ public class EventFeedbackSent extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_feedback_sent);
+        setContentView(R.layout.feedback_sent);
     }
 }
