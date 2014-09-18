@@ -76,6 +76,12 @@
             android:label="@string/title_activity_profile_page"
             android:theme="@style/EC.NoActionBar">
         </activity>
+        <activity
+            android:name=".EventFeedbackSent"
+            android:label="@string/title_activity_profile_page"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+        </activity>
+
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

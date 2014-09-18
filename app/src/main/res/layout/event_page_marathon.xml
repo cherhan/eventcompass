@@ -74,15 +74,6 @@
                         android:layout_toRightOf="@+id/btnBack" />
 
                     <ImageButton
-                        android:layout_width="@dimen/location_overlay_height"
-                        android:layout_height="@dimen/location_overlay_height"
-                        android:src="@drawable/ic_gps"
-                        android:background="@drawable/btn_touch_generic"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:id="@+id/btnShowMap"/>
-
-                    <ImageButton
                         android:layout_width="40dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="20dp"
