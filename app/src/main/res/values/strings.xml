@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Pocket Event</string>
-    <string name="tagline">Plan a better event</string>
+    <string name="tagline">Plan and run better events</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="hello_world">Hello world!</string>
@@ -51,5 +51,6 @@
     <string name="event_public_label">This event is public</string>
     <string name="title_activity_my_tickets">My Events</string>
     <string name="title_activity_event_feedback">EventFeedbackActivity</string>
+    <string name="title_activity_profile_page">ProfilePageActivity</string>
 
 </resources>
