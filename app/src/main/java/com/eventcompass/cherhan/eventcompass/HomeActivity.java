@@ -19,9 +19,19 @@ public class HomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_slideup);
 
-         //Should show the actual location instead of a text
-         txtLocation = (TextView) findViewById(R.id.tvLocation);
-         //txtLocation.setText("KL Convention Center");
+        //Should show the actual location instead of a text
+        txtLocation = (TextView) findViewById(R.id.tvLocation);
+        txtLocation.setText("Push to Locate");
+
+        //On click show actual location
+        final ImageButton btnLocation = (ImageButton)findViewById(R.id.ivLocation);
+
+        btnLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txtLocation.setText("KL Convention Center");
+            }
+        });
 
         //Launches Search
         final ImageButton btnSearch = (ImageButton)findViewById(R.id.ivSearch);
@@ -74,6 +84,17 @@ public class HomeActivity extends Activity {
             public void onClick(View view) {
                 Intent settingIntent = new Intent(HomeActivity.this, SettingsActivity.class);
                 startActivity(settingIntent);
+            }
+        });
+
+        //Goto Profile
+
+        final ImageView bnrProfile = (ImageView)findViewById(R.id.bannerProfile);
+        bnrProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent profileIntent = new Intent(HomeActivity.this, ProfilePageActivity.class);
+                startActivity(profileIntent);
             }
         });
 

@@ -1,9 +1,15 @@
 package com.eventcompass.cherhan.eventcompass;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 public class SignIn extends Activity {
 
@@ -11,6 +17,46 @@ public class SignIn extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+
+        final ImageButton btnLogin = (ImageButton)findViewById(R.id.loginButton);
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final ProgressDialog fbProgressDialog = new ProgressDialog(SignIn.this);
+                fbProgressDialog.setMessage("Signing in...");
+                fbProgressDialog.setIndeterminate(false);
+                fbProgressDialog.show();
+//                try {
+//                    Thread.sleep(2000);
+//                } catch (Exception ex) {
+//                    ex.printStackTrace();
+//                }
+
+// Hide after some seconds
+                final Handler handler  = new Handler();
+                final Runnable runnable = new Runnable() {
+                    @Override
+                    public void run() {
+                        if (fbProgressDialog.isShowing()) {
+                            fbProgressDialog.dismiss();
+                            Intent SearchIntent = new Intent(SignIn.this, HomeActivity.class);
+                            startActivity(SearchIntent);
+                        }
+                    }
+                };
+
+                fbProgressDialog.setOnDismissListener(new ProgressDialog.OnDismissListener() {
+                    @Override
+                    public void onDismiss(DialogInterface dialog) {
+                        handler.removeCallbacks(runnable);
+                    }
+                });
+
+                handler.postDelayed(runnable, 3000);
+
+            }
+        });
     }
 
 

@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Pocket Event</string>
-    <string name="tagline">Plan a better event</string>
+    <string name="tagline">Plan and run better events</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="hello_world">Hello world!</string>
@@ -18,6 +18,7 @@
     <string name="drawer_friends">Find Friends</string>
     <string name="drawer_tickets">My Tickets</string>
     <string name="drawer_browse">Browse Events</string>
+    <string name="drawer_feedback">Write Event Feedback</string>
     <string name="title_activity_search">Search Event</string>
     <string name="search_visibility_private">Private Only</string>
     <string name="search_visibility_public">Public Only</string>
@@ -49,5 +50,8 @@
     <string name="event_marathon">KL Marathon 2014</string>
     <string name="event_public_label">This event is public</string>
     <string name="title_activity_my_tickets">My Events</string>
+    <string name="title_activity_event_feedback">EventFeedbackActivity</string>
+    <string name="title_activity_profile_page">ProfilePageActivity</string>
+    <string name="title_activity_event_feedback_sent">EventFeedbackSent</string>
 
 </resources>

@@ -8,12 +8,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
-public class EventPageMarathon extends Activity {
+public class ProfilePageActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.event_page_marathon);
+        setContentView(R.layout.profile_page_slideup);
 
         //Drawer Content Events
 
@@ -22,7 +22,7 @@ public class EventPageMarathon extends Activity {
         btnCreateEvent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent createEventIntent = new Intent(EventPageMarathon.this, CreateEventActivity.class);
+                Intent createEventIntent = new Intent(ProfilePageActivity.this, CreateEventActivity.class);
                 startActivity(createEventIntent);
             }
         });
@@ -32,7 +32,7 @@ public class EventPageMarathon extends Activity {
         btnBrowse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent browseIntent = new Intent(EventPageMarathon.this, HomeActivity.class);
+                Intent browseIntent = new Intent(ProfilePageActivity.this, HomeActivity.class);
                 startActivity(browseIntent);
             }
         });
@@ -42,7 +42,7 @@ public class EventPageMarathon extends Activity {
         btnFeedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent feedbackIntents = new Intent(EventPageMarathon.this, EventFeedbackActivity.class);
+                Intent feedbackIntents = new Intent(ProfilePageActivity.this, EventFeedbackActivity.class);
                 startActivity(feedbackIntents);
             }
         });
@@ -52,19 +52,8 @@ public class EventPageMarathon extends Activity {
         btnMyEvents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent EventsIntents = new Intent(EventPageMarathon.this, MyTicketsActivity.class);
+                Intent EventsIntents = new Intent(ProfilePageActivity.this, MyTicketsActivity.class);
                 startActivity(EventsIntents);
-            }
-        });
-
-        //Goto Profile
-
-        final ImageView bnrProfile = (ImageView)findViewById(R.id.bannerProfile);
-        bnrProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent profileIntent = new Intent(EventPageMarathon.this, ProfilePageActivity.class);
-                startActivity(profileIntent);
             }
         });
     }
@@ -73,7 +62,7 @@ public class EventPageMarathon extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.event_page_marathon, menu);
+        getMenuInflater().inflate(R.menu.profile_page, menu);
         return true;
     }
 

@@ -16,7 +16,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:id="@+id/thumb"
-            android:src="@drawable/marathon"
+            android:src="@drawable/marathon1"
             android:scaleType="centerCrop"
             android:layout_alignParentTop="true" />
 
@@ -54,6 +54,7 @@
             android:layout_alignStart="@+id/textView2" />
 
         <TextView
+            android:id="@+id/textPrivacy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Public"
