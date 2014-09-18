@@ -85,7 +85,7 @@
             android:id="@+id/relativeLayout2" >
 
             <ImageView
-                android:id="@+id/btnFindFriends"
+                android:id="@+id/btnFeedback"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/btn_touch_generic"
@@ -96,13 +96,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:padding="15dp"
-                android:src="@drawable/ic_find_friends"
+                android:src="@drawable/ic_feedback"
                 android:id="@+id/imageView3" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/drawer_friends"
+                android:text="@string/drawer_feedback"
                 android:textSize="18sp"
                 android:fontFamily="sans-serif-light"
                 android:textColor="@color/shade_text_dark_strong"

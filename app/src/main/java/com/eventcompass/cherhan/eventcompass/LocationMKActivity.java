@@ -65,6 +65,16 @@ public class LocationMKActivity extends Activity {
             }
         });
 
+        final ImageView btnFeedback = (ImageView)findViewById(R.id.btnFeedback);
+
+        btnFeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent feedbackIntents = new Intent(LocationMKActivity.this, EventFeedbackActivity.class);
+                startActivity(feedbackIntents);
+            }
+        });
+
         final ImageView btnMyEvents = (ImageView)findViewById(R.id.btnMyTickets);
 
         btnMyEvents.setOnClickListener(new View.OnClickListener() {

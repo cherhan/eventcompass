@@ -18,6 +18,7 @@
     <string name="drawer_friends">Find Friends</string>
     <string name="drawer_tickets">My Tickets</string>
     <string name="drawer_browse">Browse Events</string>
+    <string name="drawer_feedback">Write Event Feedback</string>
     <string name="title_activity_search">Search Event</string>
     <string name="search_visibility_private">Private Only</string>
     <string name="search_visibility_public">Public Only</string>
@@ -49,5 +50,6 @@
     <string name="event_marathon">KL Marathon 2014</string>
     <string name="event_public_label">This event is public</string>
     <string name="title_activity_my_tickets">My Events</string>
+    <string name="title_activity_event_feedback">EventFeedbackActivity</string>
 
 </resources>

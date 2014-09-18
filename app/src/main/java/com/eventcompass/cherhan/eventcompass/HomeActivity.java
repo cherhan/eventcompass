@@ -67,6 +67,16 @@ public class HomeActivity extends Activity {
             }
         });
 
+        final ImageView btnFeedback = (ImageView)findViewById(R.id.btnFeedback);
+
+        btnFeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent feedbackIntents = new Intent(HomeActivity.this, EventFeedbackActivity.class);
+                startActivity(feedbackIntents);
+            }
+        });
+
         //Launching settings
         final ImageButton btnSettings = (ImageButton)findViewById(R.id.btnSettings);
         btnSettings.setOnClickListener(new View.OnClickListener() {
