@@ -33,16 +33,16 @@
                 android:textColor="@color/shade_text_dark_strong"
                 android:id="@+id/textView"
                 android:layout_toEndOf="@+id/ivLocation"
-                android:layout_above="@+id/textView2"
+                android:layout_above="@+id/tvLocation"
                 android:layout_toRightOf="@+id/ivLocation" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="KL Convention Centre"
+                android:text=""
                 android:fontFamily="sans-serif-condensed"
                 android:textColor="@color/shade_text_dark_strong"
-                android:id="@+id/textView2"
+                android:id="@+id/tvLocation"
                 android:layout_toEndOf="@+id/ivLocation"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="18dp" />

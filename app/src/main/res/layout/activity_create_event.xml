@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    tools:context="com.eventcompass.cherhan.eventcompass.CreateEventActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/imageButton">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/event_about"
+                    android:textAllCaps="true"
+                    android:textColor="@color/shade_main"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:id="@+id/textView"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:id="@+id/tfAbout"
+                android:background="@drawable/search_background_selector"
+                android:layout_below="@+id/textView" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:id="@+id/relativeLayout2"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/event_time"
+                    android:textAllCaps="true"
+                    android:textColor="@color/shade_main"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:id="@+id/textView2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:id="@+id/spinnerDate"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignParentStart="true" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:id="@+id/spinnerTime"
+                    android:layout_below="@+id/spinnerDate"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:id="@+id/relativeLayout3"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/event_location"
+                    android:textAllCaps="true"
+                    android:textColor="@color/shade_main"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:id="@+id/textView3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:id="@+id/tfLocation"
+                    android:background="@drawable/search_background_selector"
+                    android:layout_below="@+id/textView3" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:id="@+id/relativeLayout4"
+                android:layout_below="@+id/relativeLayout3"
+                android:layout_alignStart="@+id/relativeLayout3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/event_visibility"
+                    android:textAllCaps="true"
+                    android:textColor="@color/shade_main"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:id="@+id/textView4"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:id="@+id/spinnerVisibility"
+                    android:layout_below="@+id/textView4"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:id="@+id/relativeLayout5"
+                android:layout_below="@+id/relativeLayout4"
+                android:layout_alignStart="@+id/relativeLayout4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/event_banner"
+                    android:textAllCaps="true"
+                    android:textColor="@color/shade_main"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:id="@+id/textView5"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:layout_below="@id/textView5"
+                    android:id="@+id/btnChooseBanner"
+                    android:background="@drawable/btn_touch_generic_two"
+                    android:src="@drawable/ic_upload"/>
+
+                </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_height"
+        android:id="@+id/imageButton"
+        android:text="@string/event_accept"
+        android:background="@drawable/btn_accept"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

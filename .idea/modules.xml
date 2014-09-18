@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EventCompass.iml" filepath="$PROJECT_DIR$/EventCompass.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Parse-1.6.0/Parse-1.6.0.iml" filepath="$PROJECT_DIR$/Parse-1.6.0/Parse-1.6.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

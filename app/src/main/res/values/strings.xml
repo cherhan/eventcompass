@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">EventCompass</string>
+    <string name="app_name">Pocket Event</string>
+    <string name="tagline">Plan and run better events</string>
     <string name="title_activity_maps">Map</string>
-<<<<<<< HEAD
     <string name="title_activity_home">HomeActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_reset">RESET</string>
     <string name="current_location">Current Location</string>
     <string name="location_mk">Mont Kiara</string>
     <string name="location_kl">Kuala Lumpur</string>
@@ -17,7 +18,8 @@
     <string name="drawer_friends">Find Friends</string>
     <string name="drawer_tickets">My Tickets</string>
     <string name="drawer_browse">Browse Events</string>
-    <string name="title_activity_search">SearchActivity</string>
+    <string name="drawer_feedback">Write Event Feedback</string>
+    <string name="title_activity_search">Search Event</string>
     <string name="search_visibility_private">Private Only</string>
     <string name="search_visibility_public">Public Only</string>
     <string name="visible_private">Private</string>
@@ -25,10 +27,30 @@
     <string name="search_title_visibility">Visibility</string>
     <string name="search_title_category">Categories</string>
     <string name="search_title_location">Location</string>
-=======
     <string name="title_activity_main">MainActivity</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
->>>>>>> FETCH_HEAD
+    <string name="title_activity_location_mk">LocationMKActivity</string>
+    <string name="title_activity_sign_in">SignIn</string>
+
+    <string-array name="drawer_items">
+        <item>Create new Event</item>
+        <item>Browse Events</item>
+        <item>Find Friends</item>
+        <item>My Events</item>
+    </string-array>
+
+    <string name="title_activity_create_event">Create new Event</string>
+    <string name="event_about">About The Event</string>
+    <string name="event_time">When is it</string>
+    <string name="event_location">Where is it</string>
+    <string name="event_banner">Upload a Banner</string>
+    <string name="event_accept">Create</string>
+    <string name="event_cancel">Discard</string>
+    <string name="event_visibility">Visibility</string>
+    <string name="title_activity_event_page_marathon">EventPageMarathon</string>
+    <string name="event_marathon">KL Marathon 2014</string>
+    <string name="event_public_label">This event is public</string>
+    <string name="title_activity_my_tickets">My Events</string>
+    <string name="title_activity_event_feedback">EventFeedbackActivity</string>
+    <string name="title_activity_profile_page">ProfilePageActivity</string>
 
 </resources>
