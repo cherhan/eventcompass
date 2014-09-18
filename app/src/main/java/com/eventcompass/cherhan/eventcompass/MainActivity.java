@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.parse.Parse;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+
 
 public class MainActivity extends Activity {
 
@@ -13,6 +17,15 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
+=======
+        Parse.initialize(this, "XnAHkOKjByZ1XvJyJiom2RfpyOBYl3oLS4Pm6jFE", "Hh1WOy68fGVrcXb6gnYSk9PQ7BHUt3JSUQPurhUU");
+
+        ParseObject testObject = new ParseObject("TestObject");
+        testObject.put("foo", "bar");
+            testObject.saveEventually();
+
+>>>>>>> remotes/origin/master
     }
 
 

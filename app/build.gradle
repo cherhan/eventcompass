@@ -21,11 +21,23 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+<<<<<<< HEAD
     // You must install or update the Google Repository through the SDK manager to use this dependency.
     compile 'com.google.android.gms:play-services:5.0.+'
+=======
+    compile 'com.google.android.gms:play-services:5.0+'
+>>>>>>> remotes/origin/master
     compile 'com.android.support:appcompat-v7:20.0.0'
+<<<<<<< HEAD
+    compile project(':Parse-1.6.0')
+=======
     compile 'com.sothree.slidinguppanel:library:+'
+<<<<<<< HEAD
     // You must install or update the Support Repository through the SDK manager to use this dependency.
     compile 'com.android.support:support-v4:19.+'
     compile project(':Parse-1.6.0')
 }
+=======
+>>>>>>> 701974e1a22f0477bfacf65a8582804c04d60795
+}
+>>>>>>> remotes/origin/master
